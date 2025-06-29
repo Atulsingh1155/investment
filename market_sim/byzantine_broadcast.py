@@ -324,7 +324,6 @@ if __name__ == "__main__":
     for round_num, counts in history.items():
         print(f"Round {round_num}: Bit 0: {counts['bit_0']}, Bit 1: {counts['bit_1']}")
         
-    # Test with corrupt sender
     print(f"\n--- Testing with corrupt sender ---")
     outputs2, history2 = run_simulation(N, BIT, F, corrupt_sender=True)
     
